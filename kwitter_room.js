@@ -18,7 +18,7 @@ firebase.database().ref("/").child(room_name).update({
       purpose: "adding room name"
 });
 localStorage.setItem("room_name",room_name);
-window.location="Kwiiter_page.html";
+window.location="Kwitter_page.html";
 }
 function getData() {firebase.database().ref("/").on('value', function(snapshot) {document.getElementById("output").innerHTML = "";snapshot.forEach(function(childSnapshot) {childKey  = childSnapshot.key;
        Room_names = childKey;
